@@ -1,9 +1,10 @@
 ﻿using P06Shop.Shared;
+using P06Shop.Shared.Services.ProductService;
 using P07Shop.DataSeeder;
 
 namespace P05Shop.API.Services
 {
-    public class ProductService
+    public class ProductService : IProductService
     {
 
         public async Task<ServiceResponse<List<Product>>> GetProductsAsync()
