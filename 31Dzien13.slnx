@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="P05Shop.API/P05Shop.API.csproj" />
+  <Project Path="P06Shop.Shared/P06Shop.Shared.csproj" />
+  <Project Path="P07Shop.DataSeeder/P07Shop.DataSeeder.csproj" />
 </Solution>

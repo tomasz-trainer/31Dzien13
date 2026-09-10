@@ -153,7 +153,7 @@ namespace P05Shop.API.Controllers
             return Ok(city);
         }
 
-        //https://localhost:7127/api/WeatherForecast/cokowiek
+        //https://localhost:7127/api/WeatherForecast/MyDynamincMathodName
         [HttpGet("[action]")]
         public IActionResult MyDynamincMathodName()
         {
