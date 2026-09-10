@@ -15,7 +15,7 @@
     
     <DockPanel>
         <StackPanel DockPanel.Dock="Left" Width="150">
-            <Button Content="Open Second Window" Command="{Binding OpenWindowCommand}"></Button>
+            <Button Content="Open Shop" Command="{Binding OpenWindowCommand}"></Button>
             <Label Content="City"></Label>
             <TextBox x:Name="txtCity" Text="{Binding CityName}"></TextBox>
             <Button Command="{Binding LoadCitiesCommand}" x:Name="btnSearch" Content="Search"></Button>

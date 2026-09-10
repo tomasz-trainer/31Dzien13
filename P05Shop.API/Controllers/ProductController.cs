@@ -25,7 +25,7 @@ namespace P05Shop.API.Controllers
 
             if (result.Success)
             {
-                return Ok(result.Data);
+                return Ok(result);
             }
             else
             {

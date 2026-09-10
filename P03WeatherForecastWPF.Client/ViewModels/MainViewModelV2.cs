@@ -118,14 +118,13 @@ namespace P03WeatherForecastWPF.Client.ViewModels
         }
 
         [RelayCommand]
-        public void OpenWindow()
+        public async Task OpenWindow()
         {
-            var secondWindow = _serviceProvider.GetService<SecondWindow>();
-            var secondWindowViewModel = _serviceProvider.GetService<SecondWindowViewModel>();
-            secondWindowViewModel.Title = "Second Window";
-
+            var secondWindow = _serviceProvider.GetService<ShopProductsView>();
+            var secondWindowViewModel = _serviceProvider.GetService<ProductsViewModel>();
+         
             secondWindow.DataContext = secondWindowViewModel;
-
+            await secondWindowViewModel.LoadProductsAsync();
 
             secondWindow.Show();
         }

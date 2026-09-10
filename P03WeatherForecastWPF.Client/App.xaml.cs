@@ -44,12 +44,14 @@ namespace P03WeatherForecastWPF.Client
         {
             services.AddTransient<MainWindow>(); // tworzy instancję MainWindow przy każdym żądaniu
             services.AddTransient<SecondWindow>();
+            services.AddTransient<ShopProductsView>();
         }
 
         private void ConfigureViewModels(IServiceCollection services)
         {
             services.AddSingleton<IMainViewModel, MainViewModelV2>(); // rejestracja MainViewModel jako singleton
             services.AddSingleton<SecondWindowViewModel>();
+            services.AddSingleton<ProductsViewModel>(); // rejestracja ProductsViewModel jako singleton
 
         }
 
