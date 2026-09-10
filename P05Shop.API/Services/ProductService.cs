@@ -1,4 +1,5 @@
 ﻿using P06Shop.Shared;
+using P07Shop.DataSeeder;
 
 namespace P05Shop.API.Services
 {
@@ -11,7 +12,7 @@ namespace P05Shop.API.Services
 
             try
             {
-                result.Data = new List<Product>() { };
+                result.Data = ProductDataSeeder.GenerateProductData();
                 result.Success = true;
                 result.Message = "Products retrieved successfully.";
             }
@@ -21,6 +22,7 @@ namespace P05Shop.API.Services
                 result.Message = $"An error occurred while retrieving products: {ex.Message}";
 
             }
+            return result;
         }
     }
 }
